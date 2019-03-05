@@ -102,7 +102,7 @@ for i=1:d
   %                  attribute_sim=intra_sim;
   %              else
                     %attribute_sim=(a^2+1)*intra_sim*inter_sim/((a^2*intra_sim)+inter_sim);
-                    attribute_sim=1/(1-a)*(1/intra_sim)+a*(1/inter_sim);
+                    attribute_sim=1/((1-a)*(1/intra_sim)+a*(1/inter_sim));
                     %attribute_sim=(1-a)*intra_sim+a*inter_sim;
 
     %            end
